@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 07c37e88508f2490aae24beecc28f6b1, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -95,24 +95,6 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &176497679
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4006262244966254, guid: b7aa038ec70d14daabdf875d96f62dc3, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1443695096637006, guid: b7aa038ec70d14daabdf875d96f62dc3, type: 2}
-      propertyPath: m_Name
-      value: Planet
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b7aa038ec70d14daabdf875d96f62dc3, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1092465547
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +209,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -266,6 +248,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1307010447
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4244931754086758, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244931754086758, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244931754086758, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244931754086758, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244931754086758, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244931754086758, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244931754086758, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244931754086758, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1607850512824112, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 114345556821668858, guid: 0db922f27db2a43ef9359851a0681d17,
+        type: 2}
+      propertyPath: planetTemplate
+      value: 
+      objectReference: {fileID: 1443695096637006, guid: b7aa038ec70d14daabdf875d96f62dc3,
+        type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1391862059
 Prefab:
   m_ObjectHideFlags: 0
@@ -302,6 +336,16 @@ Prefab:
     - target: {fileID: 4595627833454548, guid: a4847fa90f9484fcbaee24a6d668a0c6, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 135755304117624570, guid: a4847fa90f9484fcbaee24a6d668a0c6,
+        type: 2}
+      propertyPath: m_Radius
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 135755304117624570, guid: a4847fa90f9484fcbaee24a6d668a0c6,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4847fa90f9484fcbaee24a6d668a0c6, type: 2}
