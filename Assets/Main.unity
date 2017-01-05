@@ -95,6 +95,24 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &176497679
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4006262244966254, guid: b7aa038ec70d14daabdf875d96f62dc3, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1443695096637006, guid: b7aa038ec70d14daabdf875d96f62dc3, type: 2}
+      propertyPath: m_Name
+      value: Planet
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b7aa038ec70d14daabdf875d96f62dc3, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1092465547
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,8 +195,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1092465547}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0.16676794, y: 0.5868182, z: -0.12507586, w: -0.78242505}
+  m_LocalPosition: {x: 5.0102453, y: 2.3306656, z: -1.4613225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
