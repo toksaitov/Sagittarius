@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 461a3ae363915479099dbd59744fb88a
-timeCreated: 1483602965
+guid: ddc0f0458da25482c82b2f0ac1d3e558
+timeCreated: 1483612167
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,8 +9,8 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: PlanetMesh_LOD2
-    4300002: PlanetMesh_LOD3
+    4300000: Plane
+    4300002: GalacticPlane
     6400000: //RootNode
   materials:
     importMaterials: 0
@@ -43,7 +43,7 @@ ModelImporter:
     addColliders: 1
     importBlendShapes: 0
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

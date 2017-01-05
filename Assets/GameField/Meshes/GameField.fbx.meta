@@ -1,17 +1,40 @@
 fileFormatVersion: 2
-guid: 461a3ae363915479099dbd59744fb88a
-timeCreated: 1483602965
+guid: 3685e6310df36463db3704512b710006
+timeCreated: 1483623505
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Field_MeshPart0
+    100004: Field_MeshPart1
+    100006: GameField_MeshPart0
+    100008: GameField_MeshPart1
     400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: PlanetMesh_LOD2
-    4300002: PlanetMesh_LOD3
-    6400000: //RootNode
+    400002: Field_MeshPart0
+    400004: Field_MeshPart1
+    400006: GameField_MeshPart0
+    400008: GameField_MeshPart1
+    2300000: Field_MeshPart0
+    2300002: Field_MeshPart1
+    2300004: GameField_MeshPart0
+    2300006: GameField_MeshPart1
+    2300008: //RootNode
+    3300000: Field_MeshPart0
+    3300002: Field_MeshPart1
+    3300004: GameField_MeshPart0
+    3300006: GameField_MeshPart1
+    3300008: //RootNode
+    4300000: Field_MeshPart0
+    4300002: Field_MeshPart1
+    4300004: GameField_MeshPart0
+    4300006: GameField_MeshPart1
+    4300008: GameField
+    6400000: Field_MeshPart0
+    6400002: Field_MeshPart1
+    6400004: GameField_MeshPart0
+    6400006: GameField_MeshPart1
+    6400008: //RootNode
   materials:
     importMaterials: 0
     materialName: 0
@@ -39,11 +62,11 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 1
     importBlendShapes: 0
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

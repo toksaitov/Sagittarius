@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44659364, g: 0.4964301, b: 0.5748256, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -104,7 +104,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4006262244966254, guid: b7aa038ec70d14daabdf875d96f62dc3, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1443695096637006, guid: b7aa038ec70d14daabdf875d96f62dc3, type: 2}
       propertyPath: m_Name
@@ -266,3 +266,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &1391862059
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1805777571275176, guid: 5f75f36f7342c438cb96872a059ddaff, type: 2}
+      propertyPath: m_Name
+      value: GalacticPlane
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805777571275176, guid: 5f75f36f7342c438cb96872a059ddaff, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658009712529154, guid: 5f75f36f7342c438cb96872a059ddaff, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5f75f36f7342c438cb96872a059ddaff, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1659299289
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1040646598097072, guid: a4847fa90f9484fcbaee24a6d668a0c6, type: 2}
+      propertyPath: m_Name
+      value: GameField
+      objectReference: {fileID: 0}
+    - target: {fileID: 4595627833454548, guid: a4847fa90f9484fcbaee24a6d668a0c6, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a4847fa90f9484fcbaee24a6d668a0c6, type: 2}
+  m_IsPrefabParent: 0
