@@ -56,6 +56,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4006262244966254}
   - component: {fileID: 205415953951018738}
+  - component: {fileID: 114580478205199756}
   m_Layer: 0
   m_Name: PlanetLODGroupPrefab
   m_TagString: Untagged
@@ -324,6 +325,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1692402570092074}
   m_Mesh: {fileID: 4300000, guid: 461a3ae363915479099dbd59744fb88a, type: 3}
+--- !u!114 &114580478205199756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1443695096637006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad42e3ec2c1b94e9caaecf48c04b7495, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mass: 10000
+  acceleration: {x: 0, y: 0}
+  velocity: {x: 0, y: 0}
+  state: 0
 --- !u!135 &135273461688767098
 SphereCollider:
   m_ObjectHideFlags: 1

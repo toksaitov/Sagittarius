@@ -95,6 +95,30 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!135 &198979357 stripped
+SphereCollider:
+  m_PrefabParentObject: {fileID: 135755304117624570, guid: a4847fa90f9484fcbaee24a6d668a0c6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1659299289}
+--- !u!1001 &207849464
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114653546791588200, guid: 4308e593ce72f4d2f90a12e941dfae73,
+        type: 2}
+      propertyPath: gameFieldCollider
+      value: 
+      objectReference: {fileID: 198979357}
+    - target: {fileID: 4455526598394064, guid: 4308e593ce72f4d2f90a12e941dfae73, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4308e593ce72f4d2f90a12e941dfae73, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1092465547
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,48 +279,19 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4244931754086758, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4244931754086758, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4244931754086758, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4244931754086758, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4244931754086758, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4244931754086758, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4244931754086758, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
+    - target: {fileID: 1607850512824112, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
+      propertyPath: m_Name
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4244931754086758, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 1607850512824112, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 114345556821668858, guid: 0db922f27db2a43ef9359851a0681d17,
         type: 2}
-      propertyPath: planetTemplate
+      propertyPath: simulatorInstance
       value: 
-      objectReference: {fileID: 1443695096637006, guid: b7aa038ec70d14daabdf875d96f62dc3,
-        type: 2}
+      objectReference: {fileID: 1857630353}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0db922f27db2a43ef9359851a0681d17, type: 2}
   m_IsPrefabParent: 0
@@ -339,14 +334,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 135755304117624570, guid: a4847fa90f9484fcbaee24a6d668a0c6,
         type: 2}
-      propertyPath: m_Radius
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 135755304117624570, guid: a4847fa90f9484fcbaee24a6d668a0c6,
-        type: 2}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4847fa90f9484fcbaee24a6d668a0c6, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1857630353 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114653546791588200, guid: 4308e593ce72f4d2f90a12e941dfae73,
+    type: 2}
+  m_PrefabInternal: {fileID: 207849464}
+  m_Script: {fileID: 11500000, guid: acf84017e62de47d8b02d87d1199e2b3, type: 3}

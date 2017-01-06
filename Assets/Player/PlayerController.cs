@@ -2,7 +2,8 @@
 
 public class PlayerController : MonoBehaviour {
 
-	public GameObject planetTemplate;
+	public PlanetController planetTemplate;
+	public GravitationalSimulator simulatorInstance;
 
 	void Update () {
 		const float MaximumRaycastDistance = 1000.0f;
@@ -14,7 +15,8 @@ public class PlayerController : MonoBehaviour {
 			RaycastHit hit;
 			if (Physics.Raycast(ray, out hit, MaximumRaycastDistance)) {
 				if (hit.transform.CompareTag (RayHitGameObjectTag)) {
-					Instantiate (planetTemplate, hit.point, Quaternion.identity);
+					PlanetController planet = Instantiate<PlanetController> (planetTemplate, hit.point, Quaternion.identity);
+					simulatorInstance.AddPlanet (planet);
 				}
 			}
 		}

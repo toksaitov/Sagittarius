@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4595627833454548}
   - component: {fileID: 33832440339389044}
   - component: {fileID: 23873882532822054}
-  - component: {fileID: 64626124647773308}
   - component: {fileID: 135755304117624570}
+  - component: {fileID: 64626124647773308}
   m_Layer: 0
   m_Name: GameFieldPrefab
   m_TagString: GameField
