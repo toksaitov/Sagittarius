@@ -95,11 +95,29 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!135 &198979357 stripped
-SphereCollider:
-  m_PrefabParentObject: {fileID: 135755304117624570, guid: a4847fa90f9484fcbaee24a6d668a0c6,
-    type: 2}
-  m_PrefabInternal: {fileID: 1659299289}
+--- !u!1001 &22939663
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1040646598097072, guid: a4847fa90f9484fcbaee24a6d668a0c6, type: 2}
+      propertyPath: m_Name
+      value: GameField
+      objectReference: {fileID: 0}
+    - target: {fileID: 4595627833454548, guid: a4847fa90f9484fcbaee24a6d668a0c6, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 23274712987356646, guid: a4847fa90f9484fcbaee24a6d668a0c6,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a4847fa90f9484fcbaee24a6d668a0c6, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &207849464
 Prefab:
   m_ObjectHideFlags: 0
@@ -111,7 +129,7 @@ Prefab:
         type: 2}
       propertyPath: gameFieldCollider
       value: 
-      objectReference: {fileID: 198979357}
+      objectReference: {fileID: 0}
     - target: {fileID: 4455526598394064, guid: 4308e593ce72f4d2f90a12e941dfae73, type: 2}
       propertyPath: m_RootOrder
       value: 5
@@ -201,8 +219,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1092465547}
-  m_LocalRotation: {x: -0.16676794, y: 0.5868182, z: -0.12507586, w: -0.78242505}
-  m_LocalPosition: {x: 5.0102453, y: 2.3306656, z: -1.4613225}
+  m_LocalRotation: {x: -0.21425825, y: 0.7373705, z: -0.2725111, w: -0.57975507}
+  m_LocalPosition: {x: 103.604935, y: 54.739243, z: 25.7397}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -316,29 +334,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5f75f36f7342c438cb96872a059ddaff, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1659299289
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1040646598097072, guid: a4847fa90f9484fcbaee24a6d668a0c6, type: 2}
-      propertyPath: m_Name
-      value: GameField
-      objectReference: {fileID: 0}
-    - target: {fileID: 4595627833454548, guid: a4847fa90f9484fcbaee24a6d668a0c6, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 135755304117624570, guid: a4847fa90f9484fcbaee24a6d668a0c6,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: a4847fa90f9484fcbaee24a6d668a0c6, type: 2}
   m_IsPrefabParent: 0
 --- !u!114 &1857630353 stripped
 MonoBehaviour:

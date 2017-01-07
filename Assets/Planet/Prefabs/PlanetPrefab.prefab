@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4158018909321376}
   - component: {fileID: 33893838355843326}
   - component: {fileID: 23873290697036580}
-  - component: {fileID: 135369589332545846}
   m_Layer: 0
   m_Name: PlanetPrefab
   m_TagString: Untagged
@@ -81,15 +80,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1790619515830162}
   m_Mesh: {fileID: 0}
---- !u!135 &135369589332545846
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1790619515830162}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}

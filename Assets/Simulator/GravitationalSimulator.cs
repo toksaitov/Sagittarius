@@ -6,10 +6,7 @@ public class GravitationalSimulator : MonoBehaviour {
 	public float simulationSofteningLength = 100.0f;
 	private float simulationSofteningLengthSquared;
 
-	public Collider gameFieldCollider;
-
 	private List<PlanetController> planets;
-	private List<PlanetController> deadPlanets;
 
 	public void AddPlanet(PlanetController planet) {
 		planets.Add (planet);
@@ -19,24 +16,13 @@ public class GravitationalSimulator : MonoBehaviour {
 		simulationSofteningLengthSquared = simulationSofteningLength * simulationSofteningLength;
 
 		planets = new List<PlanetController> ();
-		deadPlanets = new List<PlanetController> ();
 	}
 
 	void FixedUpdate () {
-		Bounds gameFieldBounds = gameFieldCollider.bounds;
 		foreach (PlanetController planet in planets) {
 			if (planet.state != PlanetState.Alive) {
 				continue;
 			}
-
-			Vector3 planetPosition = planet.transform.position;
-			if (!gameFieldBounds.Contains(planetPosition)) {
-				planet.Leave ();
-
-				continue;
-			}
-
-			Bounds planetBounds = planet.GetComponentInChildren<Collider> ().bounds;
 
 			Vector2 totalAcceleration = new Vector2 ();
 			foreach (PlanetController anotherPlanet in planets) {
@@ -44,18 +30,9 @@ public class GravitationalSimulator : MonoBehaviour {
 					continue;
 				}
 
-				Bounds anotherPlanetBounds = anotherPlanet.GetComponentInChildren<Collider> ().bounds;
-				if (planetBounds.Intersects(anotherPlanetBounds)) {
-					planet.Explode ();
-					anotherPlanet.Explode ();
-
-					break;
-				}
-
 				Vector2 acceleration = new Vector2(0, 0);
 
-				Vector3 anotherPlanetPosition = anotherPlanet.transform.position;
-				Vector3 universeR = anotherPlanetPosition - planetPosition;
+				Vector3 universeR = anotherPlanet.transform.position - planet.transform.position;
 				Vector2 galacticPlaneR = new Vector2(universeR.x, universeR.z);
 
 				float distanceSquared = galacticPlaneR.sqrMagnitude + simulationSofteningLengthSquared;
@@ -67,27 +44,9 @@ public class GravitationalSimulator : MonoBehaviour {
 				totalAcceleration += acceleration;
 			}
 
-			if (planet.state == PlanetState.Alive) {
-				planet.acceleration = totalAcceleration;
-			}
+			planet.acceleration = totalAcceleration;
 		}
 
-		planets.RemoveAll (planet => {
-			bool shouldRemove = planet.state != PlanetState.Alive;
-			if (shouldRemove) {
-				deadPlanets.Add(planet);
-			}
-
-			return shouldRemove;
-		});
-
-		deadPlanets.RemoveAll (deadPlanet => {
-			bool shouldRemove = deadPlanet.state == PlanetState.Left || deadPlanet.state == PlanetState.Exploded;
-			if (shouldRemove) {
-				Destroy(deadPlanet.gameObject);
-			}
-
-			return shouldRemove;
-		});
+		planets.RemoveAll (planet => planet.state != PlanetState.Alive);
 	}
 }
