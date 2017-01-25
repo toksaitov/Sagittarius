@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 65306948903743180}
   - component: {fileID: 135424408303593020}
   - component: {fileID: 54252809987423938}
+  - component: {fileID: 114925223678736716}
   m_Layer: 0
   m_Name: GameFieldPrefab
   m_TagString: GameField
@@ -82,7 +83,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1040646598097072}
-  m_Mesh: {fileID: 4300008, guid: 3685e6310df36463db3704512b710006, type: 3}
+  m_Mesh: {fileID: 4300012, guid: 3685e6310df36463db3704512b710006, type: 3}
 --- !u!54 &54252809987423938
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -110,6 +111,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 160, y: 0.01, z: 160}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114925223678736716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1040646598097072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e9112ec87c5d4dd5942306826f01349, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planets: []
 --- !u!135 &135424408303593020
 SphereCollider:
   m_ObjectHideFlags: 1

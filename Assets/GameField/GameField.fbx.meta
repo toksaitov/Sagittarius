@@ -30,6 +30,8 @@ ModelImporter:
     4300004: GameField_MeshPart0
     4300006: GameField_MeshPart1
     4300008: GameField
+    4300010: Grid
+    4300012: GameFieldMesh
     6400000: Field_MeshPart0
     6400002: Field_MeshPart1
     6400004: GameField_MeshPart0
@@ -62,7 +64,7 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 3
+    meshCompression: 0
     addColliders: 1
     importBlendShapes: 0
     swapUVChannels: 0

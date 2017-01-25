@@ -16,6 +16,11 @@ public class GravitationalSimulator : MonoBehaviour {
 		simulationSofteningLengthSquared = simulationSofteningLength * simulationSofteningLength;
 
 		planets = new List<PlanetController> ();
+
+		WireframeController[] wireframeControllers = FindObjectsOfType<WireframeController> ();
+		foreach (WireframeController wireframeController in wireframeControllers) {
+			wireframeController.planets = planets;
+		}
 	}
 
 	void FixedUpdate () {
@@ -46,7 +51,10 @@ public class GravitationalSimulator : MonoBehaviour {
 
 			planet.acceleration = totalAcceleration;
 		}
+	}
 
+	void Update () {
 		planets.RemoveAll (planet => planet.state != PlanetState.Alive);
 	}
+
 }
