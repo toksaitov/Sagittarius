@@ -1,6 +1,8 @@
 Sagittarius
 ===========
 
+![Sagittarius](http://i.imgur.com/H76uHYb.png)
+
 Sagittarius is a game to create a stable planetary systems around a supermassive
 black hole. Place asteroid, comets, planets or stars around the most mysterious
 thing in the universe inside a realistic gravitational simulator. Slingshot
@@ -17,3 +19,6 @@ The game utilizes unique hardware features of iPhones and iPads to make it
 possible to perform realistic gravitational simulation and visualization of
 thousands of bodies in space right in the palm of your hand.
 
+## Credits
+
+*Sagittarius* was created by [Dmitrii Toksaitov](https://github.com/toksaitov).
